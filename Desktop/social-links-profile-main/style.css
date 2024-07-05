@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family:"Inter";
+    color:hsl(295, 54%, 81%);
+    background-color:hsl(303, 90%, 4%);
+}
+
+.card{
+    width:30%;
+    background-color:hsl(304, 93%, 6%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:12px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding-bottom:20px;
+}
+
+
+img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.socials{
+    background-color:hsl(302, 100%, 10%);
+    width:80%;
+    border-radius:12px;
+    margin-bottom:12px;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+}
+
+.loc{
+    color:hsl(303, 66%, 46%);
+    margin-top: 0;
+}
+
+.info{
+    color:hsl(294, 18%, 52%);
+    margin-bottom:20px;
+}
+
+.socials:hover{
+    color:rgb(53, 5, 67);
+    background-color: hsl(303, 66%, 46%);
+    cursor: pointer;
+    caret-color: black;
+    font-weight:bold;
+}
+.loc,.info{
+    font-size: 12px;
+}
+.name{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .card{
+        width:45%
+    }
+  }
+
+  @media only screen and (max-width: 868px) {
+    .card{
+        width:50%
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card{
+        width:60%
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .card{
+        width:75%
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .card{
+        width:90%
+    }
+  }
