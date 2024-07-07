@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(254, 250, 250);
+}
+.left,.right{
+    display:inline-block;
+    width:25vw;
+    padding:10px;
+    border-radius:12px;
+    height:60vh;
+    
+}
+main{
+    display:flex;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+}
+
+.circle{
+    background-color: hsl(241, 73%, 46%);
+    background: linear-gradient(hsl(252, 78%, 50%),hsl(252, 100%, 67%));
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    padding:3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left{
+    position: relative;
+    background:linear-gradient(rgb(100, 73, 255),rgb(25, 21, 255));
+    z-index: 999;
+}
+.right{
+    border:0px solid rgb(100, 73, 207);
+    box-shadow: 5px 5px 10px rgb(188, 187, 187);
+    position: relative;
+    left:-12px;
+    z-index:1;
+    padding-left:22px
+}
+
+button{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:5px;
+}
+li{
+    width:80%;
+    border-radius: 12px;
+    padding:10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align:left
+}
+
+.one{
+    color:hsl(0, 100%, 67%);
+    background-color: hsl(0, 36%, 91%);
+}
+.two{
+    color:hsl(39, 100%, 56%);
+    background-color: hsl(39, 71%, 89%);
+}
+.three{
+    color:hsl(166, 100%, 37%);
+    background-color: hsl(167, 75%, 89%);
+}
+.four{
+    color:hsl(234, 85%, 45%);
+    background-color: hsl(235, 65%, 83%);
+}
+button{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    padding: 15px;
+    border:1px solid black;
+    font-weight: 600;
+    cursor: pointer;
+    position:relative;
+    top:12px
+    
+}
+button:active{
+    background:linear-gradient(rgb(100, 73, 207),rgb(25, 21, 241));
+    color:hsl(241, 100%, 89%);
+    
+}
+ul{
+    padding: 0;
+}
+.res{
+    font-weight: 700;
+    color: white;
+    font-size: 4rem;
+    display: block;
+    padding-top: 20px;
+}
+img{
+    width:15px;
+    margin-right: 5px;
+}
+
+.li-v,.circle{
+    color:hsl(241, 100%, 89%);
+}
+.exc{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.topic{
+    text-align: left;
+    margin-left: 28px;
+    font-weight: 800;
+    margin-bottom: 28px;
+    font-size:20px
+}
+.l-s{
+    float:right;
+    color:hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+li{
+    font-weight: 600;
+}
+.grayed{
+    color:rgb(129, 126, 126)
+}
+
+@media only screen and (max-width:1035px){
+    .left,.right{
+        width:35vw;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .left,.right{
+        width:42vw;
+    }
+}
+
+@media only screen and (max-width:678px){
+    .left,.right{
+        width:50vw;
+        margin:0
+    }
+    body{
+        margin:0
+    }
+    .right{
+        margin-right:auto;
+    }
+    .left{
+        margin-left:10px
+    }
+}
+
+@media only screen and (max-width:568px){
+    body{
+        overflow-x: hidden;
+    }
+    .left,.right{
+        min-width:93vw;
+        display: block;
+        margin:0;
+        font-size: 0.9em;
+        
+    }
+    .circle{
+        width:100px;
+        height:100px;
+    }
+    .left{
+        position: absolute;
+        top:0;
+        height:47vh;
+        padding: 10px;
+        padding-bottom: 15px;
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .right{
+        height:56vh;
+        box-shadow: 0;
+        position: relative;
+        left:0;
+        top:28vh;
+        border-radius: 0;
+        padding-bottom: 15px;
+        /* padding-left:22px */
+    }
+    .res{
+        padding-top: 0;
+    }
+    .li-v{
+        
+    }
+}
