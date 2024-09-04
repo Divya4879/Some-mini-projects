@@ -21,10 +21,10 @@ background_image = """
 
 st.markdown(background_image, unsafe_allow_html=True)
 
-# # Set your API key
+# Set your API key
 
 client = Anthropic(
-    # defaults to os.environ.get("ANTHROPIC_API_KEY")
+    
     api_key=os.environ.get("ANTHROPIC_API_KEY"),
 )
 
