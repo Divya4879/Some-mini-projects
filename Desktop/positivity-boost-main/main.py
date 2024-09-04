@@ -29,9 +29,6 @@ client = Anthropic(
 )
 
 
-# # Create the API client
-# client = anthropic.Client(api_key="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")
-
 title = '<h1 style="font-family:serif;color:#9e0771; font-size: 54px">Your customized mood booster</h1>'
 st.markdown(title, unsafe_allow_html=True)
 
